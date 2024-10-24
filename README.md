@@ -102,7 +102,7 @@ The Prettier config:
 ## Repository
 
 - **Type**: Git
-- **URL**: [GitHub Repository](https://github.com/theabhisheksrivastav/nsmetric_trading_platform)
+- **URL**: [GitHub Repository](https://github.com/Raghu3-3102/Diskussss.git)
 
 ## Issues
 
