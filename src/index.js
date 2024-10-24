@@ -16,3 +16,6 @@ connectDB()
 })
 .catch((error) => {console.error("Error connecting to MongoDB: ", error);
 })
+
+// Export the app if needed elsewhere
+export { app };
