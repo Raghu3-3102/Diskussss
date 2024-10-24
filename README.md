@@ -35,7 +35,7 @@ Before running the backend application, ensure that you have the following insta
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/theabhisheksrivastav/nsmetric_trading_platform.git
+   git clone (https://github.com/Raghu3-3102/Diskussss.git)
    ```
 
 2. Navigate to the backend directory:
