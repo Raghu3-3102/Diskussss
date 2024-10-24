@@ -5,7 +5,7 @@ import { apiResponse } from '../utils/apiResponse.js'
 import jwt from 'jsonwebtoken'
 import { sendmail } from '../services/mail.service.js'
 import { otpSendHtml,forgotPasswordHtml } from '../constant.js'
-import {storeOtp} from '../services/RedisSetup.service.js'
+// import {storeOtp} from '../services/RedisSetup.service.js'
 // import { sendMessage } from '../services/message.service.js'
 import NodeCache from 'node-cache';
 
