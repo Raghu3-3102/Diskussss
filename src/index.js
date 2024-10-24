@@ -18,4 +18,4 @@ connectDB()
 })
 
 // Export the app if needed elsewhere
-export { app };
+export default app;
