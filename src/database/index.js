@@ -5,7 +5,7 @@ import { DB_NAME } from "../constant.js"
 const connectDB = async () => {
     try {
        
-        const uri = `mongodb://localhost:27017/${DB_NAME}`;
+        const uri = `mongodb+srv://rajanitnavapara9999:avCSmRvSfYohJwlT@cluster0.7xtre.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/${DB_NAME}`;
         const connectionInstance = await mongoose.connect(uri, {
     
         });
