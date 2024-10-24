@@ -116,7 +116,7 @@ const registerUser = asyncHandler(async (req, res) => {
       
       
     });
-    return res.status(201).send({ success: true, message: 'User created successfully' });
+    return res.status(201).send({ success: true, message: 'OTP verficaton sent succesfuly' });
   } catch (error) {
     return res.status(500).send({ success: false, message: 'Error in registering user', error: error.message });
     
