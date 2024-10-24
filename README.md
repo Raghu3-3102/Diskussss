@@ -41,7 +41,7 @@ Before running the backend application, ensure that you have the following insta
 2. Navigate to the backend directory:
 
    ```bash
-   cd nsmetric_trading_platform/backend
+   cd backend
    ```
 
 3. Install the backend dependencies:
