@@ -118,3 +118,4 @@ out
 .pnp.*
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node
+.vercel
