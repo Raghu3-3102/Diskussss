@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
-    "start": "pm2 start src/index.js",
-    "kill": "pm2 kill"
-  },
+ "scripts": {
+  "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+  "start": "node src/index.js",
+  "kill": "pm2 kill"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theabhisheksrivastav/nsmetric_trading_platform.git"

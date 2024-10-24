@@ -18,7 +18,7 @@ function generateVerificationCode() {
 const verificationCodeMail = async (email) => {
   const verificationCode = generateVerificationCode();
   otpCache.set(email, verificationCode);
-  console.log(email, verificationCode);
+  
   
   
   const isMailSent = await sendmail(email, otpSendHtml(verificationCode), 'Your OTP Code - Diskuss')
@@ -57,7 +57,7 @@ const verificationCodeForgotPassword = async (email) => {
 const verifyUser = (identifier, enteredOtp) => {
   try {
     const storedOtp = otpCache.get(identifier); // identifier could be email or phone
-    console.log(storedOtp);
+    
     
     if (storedOtp && storedOtp === enteredOtp) {
       otpCache.del(identifier); // OTP is valid, remove from cache
@@ -350,7 +350,9 @@ const VerifyOtpForgetPaasword = asyncHandler(async (req, res) => {
 
    }
 
-   
+   user.isForgotPassword = true
+
+  const updatedUser = await user.save();
     
   
     return res
@@ -360,6 +362,21 @@ const VerifyOtpForgetPaasword = asyncHandler(async (req, res) => {
     throw new apiError(500, 'Error in sending password')
     
   }
+
+
+})
+
+const changpassword = asyncHandler(async(req,res)=>{
+
+  const {email,newPaasword,confirmPassword} = req.body;
+
+  const user = await User.findOne({ $or: [{ email }]});
+
+  if (user.isForgotPassword == false) {
+      throw new apiError(500, 'OTP verification failed')
+  }
+
+  
 
 
 })

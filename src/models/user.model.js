@@ -31,6 +31,12 @@ const userSchema = new Schema(
             
             
         },
+        isForgotPassword:{
+            type : Boolean,
+            default:false
+            
+            
+        },
        
         refreshToken : {
             type : String,
