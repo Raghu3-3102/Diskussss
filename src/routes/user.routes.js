@@ -16,6 +16,10 @@ import { verifyJWT } from "../middlewares/auth.middleware.js";
 
 const router = Router();
 
+router.route("/").get((req, res) => {
+    res.send("Diskuss API V1")
+})
+
 router.route("/register").post(registerUser)
 router.route("/login").post(loginUser)
 router.route("/verify").post(verificationOtp)
