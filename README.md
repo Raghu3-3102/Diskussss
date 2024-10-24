@@ -1,7 +1,6 @@
 ```markdown
-# NSMetric Trading Platform Backend
+# Diskuss Backend
 
-This repository contains the backend code for the NSMetric Crypto Trading Platform. It is built with Node.js, Express, MongoDB (Mongoose), and JWT for authentication. The backend handles API endpoints, authentication, and data management.
 
 ## Project Structure
 
@@ -103,15 +102,15 @@ The Prettier config:
 ## Repository
 
 - **Type**: Git
-- **URL**: [GitHub Repository](https://github.com/theabhisheksrivastav/nsmetric_trading_platform)
+- **URL**: [GitHub Repository](https://github.com/Raghu3-3102/Diskussss.git)
 
 ## Issues
 
-If you find any bugs or have feature requests, please file them [here](https://github.com/theabhisheksrivastav/nsmetric_trading_platform/issues).
+If you find any bugs or have feature requests, please file them [here](https://github.com/Raghu3-3102/Diskussss).
 
 ## Author
 
-- **Abhishek**
+- **Raghu**
 
 ## License
 
