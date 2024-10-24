@@ -21,12 +21,12 @@ const verificationCodeMail = async (email) => {
   console.log(email, verificationCode);
   
   
-  // const isMailSent = await sendmail(email, otpSendHtml(verificationCode), 'Your OTP Code - Diskuss')
-  // if (isMailSent) {
-  //   return verificationCode;
-  // } else {
-  //   throw new apiError(500, 'Something went wrong while sending OTP');
-  // }
+  const isMailSent = await sendmail(email, otpSendHtml(verificationCode), 'Your OTP Code - Diskuss')
+  if (isMailSent) {
+    return verificationCode;
+  } else {
+    throw new apiError(500, 'Something went wrong while sending OTP');
+  }
 }
 
 const verificationCodeForgotPassword = async (email) => {
@@ -35,12 +35,12 @@ const verificationCodeForgotPassword = async (email) => {
   console.log(email, verificationCode);
   
   
-  // const isMailSent = await sendmail(email, forgotPasswordHtml(verificationCode), 'Your OTP Code - Diskuss')
-  // if (isMailSent) {
-  //   return verificationCode;
-  // } else {
-  //   throw new apiError(500, 'Something went wrong while sending OTP');
-  // }
+  const isMailSent = await sendmail(email, forgotPasswordHtml(verificationCode), 'Your OTP Code - Diskuss')
+  if (isMailSent) {
+    return verificationCode;
+  } else {
+    throw new apiError(500, 'Something went wrong while sending OTP');
+  }
 }
 
 // const verificationCodePhone = async (phoneNumber) => {
